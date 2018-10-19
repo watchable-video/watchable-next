@@ -13,7 +13,7 @@ set :assets_roles, [:app]
 set :conditionally_migrate, true
 
 append :linked_files, "config/database.yml", "config/secrets.yml", ".env"
-append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/system", "public/videos"
+append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/system"
 
 namespace :app do
   desc "Quiet sidekiq"
